@@ -1,0 +1,116 @@
+* { font-family: 'Open Sans', sans-serif; }
+body {
+    margin: 2em auto;
+    width: 100%;
+    max-width: 960px;
+}
+.myInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: cornflowerblue;
+    width: calc(100% - 30px);
+    padding: 15px;
+    border-radius: 5px;
+}
+.myInfo img { width: 35%; }
+.myInfo > a { text-align: center; }
+.myInfo h1, .myInfo h2 { 
+    margin-left: 5%; 
+    color: white;
+    text-align: center;
+    font-family: 'Lora', serif;
+}
+.principles {
+    margin: 1em 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.single-principle {
+    width: 98%;
+    display: flex;
+    justify-content:flex-start;
+    flex-direction: column;
+    overflow: hidden;
+    border: solid 1px cornflowerblue;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+.single-principle .principle-title {
+    margin: 0;
+    padding: .35em 10px;
+    text-align: left;
+    background-color: cornflowerblue;
+}
+.single-principle .company, .single-principle a {
+    padding: .35em 10px;
+    margin: 0;
+}
+.single-principle img  {
+    width: 96%;
+    margin: 0 auto;
+}
+.single-principle .desc {
+    text-align: left;
+    margin: .35em 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.footer {
+    background: cornflowerblue;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    width: calc(100% - 30px);
+}
+.footer p small { color: greenyellow; }
+
+@media only screen and (max-width: 480px){
+    body {
+        width: 100%!important;
+        padding: 0!important;
+        margin: 0!important;
+    }
+    .myInfo {
+        max-width: 100%;
+        overflow: hidden;
+        border-radius: 0;
+    }
+    footer.footer {
+        max-width: 100%;
+        width: calc(100% - 30px);
+        border-radius: 0;
+    }
+    .principles { display: block; width: calc(100% - 2px); }
+    .single-principle { width: 95%; padding: 0; margin: 0 auto 50px; }
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 90%;
+        padding: 0 10px;
+    }
+    footer.footer{ 
+        width: calc(100% - 30px);
+        padding: 15px;
+    }
+    .principles {
+        grid-template-columns: 1fr 1fr;
+    }
+    .principles .single-principle:nth-child(1){
+        grid-column: 1/2;
+        grid-row: 1;
+    }
+    .principles .single-principle:nth-child(2){
+        grid-column: 2/3;
+        grid-row: 1;
+    }
+    .principles .single-principle:nth-child(3){
+        grid-column: 1/3;
+        grid-row: 2;
+        width: 100%;
+    }
+}
