@@ -32,6 +32,6 @@ body {
     text-align: center;
     color: white;
     border-radius: 5px;
-    width: 100%;
+    width: calc(100% - 30px);
 }
 .footer p small { color: greenyellow; }
