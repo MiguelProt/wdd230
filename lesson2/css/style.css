@@ -2,19 +2,43 @@
 body {
     margin: 2em auto;
     width: 100%;
-    max-width: 960px;
+    max-width: 1200px;
+    background-image: url(../images/pattern_dark.png);
+    background-position: center;
+    background-repeat: repeat;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+h1, h2, h3, h4, h5, h6 { color: #687178; }
+.container{
+    background-color: white;
+    padding: 1.5em;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, .5);
 }
 .myInfo {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background: cornflowerblue;
+    background: #2b5074;
     width: calc(100% - 30px);
     padding: 15px;
     border-radius: 5px;
 }
 .myInfo img { width: 35%; }
-.myInfo > a { text-align: center; }
+.myInfo > a { 
+    text-align: center; 
+    color: white;
+    text-decoration: none;
+    background-color: greenyellow;
+    width: fit-content;
+    margin: 0 auto;
+    color: #2b5074;
+    padding: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
 .myInfo h1, .myInfo h2 { 
     margin-left: 5%; 
     color: white;
@@ -34,7 +58,7 @@ body {
     justify-content:flex-start;
     flex-direction: column;
     overflow: hidden;
-    border: solid 1px cornflowerblue;
+    border: solid 1px #2b5074;
     border-radius: 5px;
     margin-bottom: 50px;
 }
@@ -42,7 +66,9 @@ body {
     margin: 0;
     padding: .35em 10px;
     text-align: left;
-    background-color: cornflowerblue;
+    background-color: #2b5074;
+    color: white;
+    font-weight: normal;
 }
 .single-principle .company, .single-principle a {
     padding: .35em 10px;
@@ -59,7 +85,7 @@ body {
     margin-bottom: 30px;
 }
 .footer {
-    background: cornflowerblue;
+    background: #2b5074;
     padding: 15px;
     text-align: center;
     color: white;
@@ -112,5 +138,22 @@ body {
         grid-column: 1/3;
         grid-row: 2;
         width: 100%;
+    }
+}
+@media screen and ( max-width: 480px){
+    .container { 
+        margin: .75em;
+    }
+    .myInfo {
+        flex-direction: column;
+    }
+    .myInfo h1 { 
+        text-align: center; 
+        margin: 0;
+    }
+    .myInfo img {
+        margin: 0 auto 1em;
+        width: 120px;
+        height: 120px;
     }
 }
