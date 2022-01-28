@@ -16,9 +16,9 @@ document.querySelector('.mobile-menu').addEventListener('click', (function(){
     let menu = document.getElementById('sub-nav');
     if ( menu.className.indexOf('show') > -1 ){
         menu.classList.remove('show');
-        document.querySelector('.mobile-menu').textContent = "Show Menu";
+        document.querySelector('.mobile-menu').innerHTML = "Menu &#9776;";
     } else {
         menu.classList.add('show');
-        document.querySelector('.mobile-menu').textContent = "Hide Menu";
+        document.querySelector('.mobile-menu').innerHTML = "Menu &#215;";
     }
 }));
