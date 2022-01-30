@@ -89,7 +89,7 @@ main {
 .primary { background-color: #0075b1; }
 .secondary { background-color: #ffe230; }
 .accent1 { background-color: #ee4237; }
-.accent2 { background-color: #000000; color: white; }
+.accent2 { background-color: #3e3e3e; color: white; }
 nav { 
     width: 100%; 
     background-color: gainsboro; 

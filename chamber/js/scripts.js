@@ -11,3 +11,9 @@
     document.getElementById("year").innerHTML = year;
     document.getElementById("fullDate").innerHTML = dateTime;
  })();
+
+ document.querySelector('.mobile-menu').addEventListener('click', (function(){
+    let menu = document.querySelector('.menu-items');
+
+    menu.classList.toggle('show')
+}));

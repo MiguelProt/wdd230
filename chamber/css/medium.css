@@ -1,0 +1,47 @@
+@media screen and (min-width: 481px) and (max-width: 992px) {
+    header { 
+        flex-direction: column; 
+        text-align: center;
+    }
+    .menu-items { flex-direction: row; }
+    /* Grid */
+    .grid{
+        grid-template-columns: 2fr 1fr;
+    }
+    .grid > div { grid-column: 1/4; }
+    .call-to-action { grid-row: 1; }
+    .news { grid-row: 2; }
+    .spotlights { 
+        grid-row: 3; 
+        flex-direction: row;
+    }
+    .join { grid-row: 4; }
+    .event {
+        grid-row: 5;
+        grid-column: 1!important;
+    }
+    .wheater {
+        grid-row: 5;
+        grid-column: 2/4!important;
+    }
+    .columns {
+        flex-direction: row!important;
+        margin: 1em;
+    }
+    .footer-map iframe {
+        height: 150px;
+    }
+    .footer-logo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footer-contact a{
+        text-align: left;
+    }
+    .mobile-menu { display: none; }
+    .menu-items {
+        display: flex; 
+        margin-top: 3em;
+    }
+}
