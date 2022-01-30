@@ -4,6 +4,7 @@
         height: 80px;
     }
     header { flex-direction: row; }
+    .container { margin: 1rem auto; }
     .mobile-menu { display: none; }
     .menu-items { 
         display: flex; 
