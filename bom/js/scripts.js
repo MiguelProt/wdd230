@@ -33,8 +33,6 @@ function clearInput() {
 }
 
 input.addEventListener("input", function () {
-    console.log(input.value);
-    console.log(button);
     if (input.value != '' && input.value != null )
         button.removeAttribute("disabled");
     else
