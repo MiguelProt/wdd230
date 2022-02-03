@@ -11,10 +11,7 @@ button.addEventListener("click", function () {
     const deleteButton = document.createElement('button');
     deleteButton.textContent = "X";
     deleteButton.addEventListener("click", deleteItem);
-
-
-
-
+    
     createdLi.textContent = input.value;
     createdLi.appendChild(deleteButton);
     list.appendChild(createdLi);
