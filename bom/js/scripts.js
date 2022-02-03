@@ -18,12 +18,15 @@ button.addEventListener("click", function () {
     createdLi.textContent = input.value;
     createdLi.appendChild(deleteButton);
     list.appendChild(createdLi);
-
+    clearInput();
 });
 
 function deleteItem() {
     const parentLi = (this).parentNode.remove();
+    clearInput();
+}
 
+function clearInput() {
     input.value = '';
     input.focus();
 }
