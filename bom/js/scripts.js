@@ -29,6 +29,7 @@ function deleteItem() {
 function clearInput() {
     input.value = '';
     input.focus();
+    button.setAttribute("disabled", true);
 }
 
 input.addEventListener("input", function () {
