@@ -1,7 +1,20 @@
 @media screen and (min-width: 481px) and (max-width: 992px) {
     header { 
-        flex-direction: column; 
-        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+    .brand { grid-column: 1; }
+    .menu { 
+        grid-column: 3; 
+        grid-row: 1;
+    }
+    .social-media { 
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
     }
     .container { margin: 1rem auto; }
     .menu-items { flex-direction: row; }
@@ -40,9 +53,35 @@
     .footer-contact a{
         text-align: left;
     }
-    .mobile-menu { display: none; }
+    .mobile-menu { 
+        display: block; 
+        margin: auto 0;
+    }
+    .menu-items { display: none!important; }
     .menu-items {
         display: flex; 
         margin-top: 3em;
     }
+    .menu-items.show {
+        display: block!important;
+        position: absolute;
+        background: white;
+        min-width: 250px;
+        box-shadow: 0 0 25px #0000005c;
+        margin: 0;
+        top: 120px;
+        z-index: 2;
+        padding: 5px;
+        right: 20px;
+    }
+    ul.menu-items.show:after {
+        content: "";
+        border: 10px solid white;
+        position: absolute;
+        top: -10px;
+        transform: rotate(45deg);
+        z-index: -1;
+        left: calc(50% - 8px);
+    }
+    
 }
