@@ -4,18 +4,19 @@
         height: 80px;
     }
     header { 
-        display: flex;
-        flex-direction: row; 
+        grid-template: auto auto / 1fr 2fr 1fr;
     }
-    .container { margin: 1rem auto; }
+    .menu {
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .container { margin: 1rem; }
     .mobile-menu { display: none; }
     .menu-items { 
         display: flex; 
         flex-direction: row;
     }
-    /* .brand {
-        grid-column: 1;
-    } */
+    
 
     /* Grid */
     .grid {
@@ -26,26 +27,17 @@
         margin: 1rem;
     }
     
-    .grid * {
-        background-color: #ee4237;
-        width: 100%;
-        min-height: 150px;
-    }
-    
     .event {
         grid-column: 1;
         grid-row: 1;
-        background-color: rosybrown;
     }
     .wheater {
         grid-column: 1;
         grid-row: 2;
-        background-color: royalblue;
     }
     .join {
         grid-column: 1;
         grid-row: 3;
-        background-color: seagreen;
     }
     .call-to-action {
         grid-column: 2;
@@ -54,19 +46,13 @@
     .news {
         grid-column: 2;
         grid-row: 3;
-        background-color:sienna;
     }
     .spotlights {
         grid-column: 3;
         grid-row: 1/4;
-        background-color: slateblue;
         grid-gap: 0;
         display: flex;
         flex-direction: column;
-    }
-    .spotlights > div {
-        margin: 10px;
-        max-width: calc(100% - 20px);
     }
     .columns {
         flex-direction: row!important;
@@ -84,4 +70,8 @@
     .footer-contact a{
         text-align: left;
     }
+    .join, .spot { 
+        display: block!important;
+    }
+    .spot .message { font-size: 14px; }
 }
