@@ -88,9 +88,9 @@ header {
 .date {
     grid-column: 1/4;
     grid-row: 3;
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     padding: 10px;
-    color: gray;
+    color: var(--accent2-color);
     text-align: center;
     margin-top: 15px;
     font-family: 'Lora', sans-serif;

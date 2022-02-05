@@ -10,10 +10,15 @@
 
     document.getElementById("year").innerHTML = year;
     document.getElementById("fullDate").innerHTML = dateTime;
+
+    const dataField = document.querySelector(".date");
+    const now = new Date();
+    const fullDate = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(now);
+
+    dataField.textContent = fullDate;
  })();
 
  document.querySelector('.mobile-menu').addEventListener('click', (function(){
     let menu = document.querySelector('.menu-items');
-
-    menu.classList.toggle('show')
+    menu.classList.toggle('show');
 }));
