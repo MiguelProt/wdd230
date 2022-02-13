@@ -4,9 +4,18 @@
     let month = today.getMonth() + 1;
     let year = today.getFullYear();
     let day = today.getDate();
+    let weekDay = today.getDay()
     let date = `${month}/${day}/${year}`;
     let time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
     let dateTime = `${date} ${time}`;
+
+    const special_banner = document.getElementById('top-banner')
+
+    if (weekDay == 1 || weekDay == 2)
+        special_banner.style.display = 'block';
+    else
+        special_banner.style.display = 'none';
+
 
     document.getElementById("year").innerHTML = year;
     document.getElementById("fullDate").innerHTML = dateTime;
