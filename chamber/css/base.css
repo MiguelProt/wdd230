@@ -51,7 +51,7 @@ h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
     color: white;
 }
 body {
-    background-image: url(../images/bg-cancun.jpg);
+    background-image: url(../images/bg-cancun.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -199,7 +199,7 @@ header {
 .call-to-action {
     grid-column: 1;
     grid-row: 1;
-    background-image: url(../images/original.png);
+    background-image: url(../images/original.webp);
     background-position: center;
     background-size: cover;    
     position: relative;
