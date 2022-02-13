@@ -58,12 +58,27 @@
                     <h3>
                         Wheater
                     </h3>
+                    <div class="wheater-image">
+                        <i class="fa-solid fa-cloud-sun"></i>
+                        <div class="temp">
+                            <p><span id="temp">33</span> °C</p>
+                        </div>
+                    </div>
+                    <h4>Partly Cloudy</h4>
+                    <hr>
+                    <p>Wind Speed: <span id="wind_speed">2.5</span>km/h</p>
+                    <p>Wind Chill: <span id="wind_chill"></span></p>
                 </div>
                 <div class="join">
                     <a href="#" class="btn m-center">Join Us!</a>
                     <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
                 </div>
                 <div class="call-to-action">
+                    <picture>
+                        <source srcset="./images/hero-medium.webp" media="(min-width: 500px) and (max-width: 799px)">
+                            <source srcset="./images/hero-large.webp" media="(min-width: 800px)">
+                        <img src="./images/hero-small.webp" alt="Cancun Chamber" >
+                    </picture>
                     <div class="layer-dark">
                         <h3 class="welcome">Welcome to Cancu's chamber of Commerce</h3>
                         <a href="#" class="btn">Join the Chamber</a>
@@ -145,5 +160,6 @@
     </div>
 
     <script src="./js/scripts.js"></script>
+    <script src="./js/windchill.js"></script>
 </body>
 </html>

@@ -173,6 +173,7 @@ header {
     color: white;
     transform: scale(1.02);
 }
+.grid > div:hover > h4,
 .grid > div:hover > h3,
 .grid .spot:hover > h3 {
     color: var(--secondary-color);
@@ -199,12 +200,14 @@ header {
 .call-to-action {
     grid-column: 1;
     grid-row: 1;
-    background-image: url(../images/original.webp);
+    /*background-image: url(../images/original.webp);
     background-position: center;
-    background-size: cover;    
+    background-size: cover;*/
     position: relative;
     min-height: 200px;
     text-align: left;
+    overflow: hidden;
+    padding: 0;
 }
 .layer-dark {
     position: absolute;
@@ -213,6 +216,15 @@ header {
     width: 100%;
     height: -webkit-fill-available;
     transition: all 0.3s;
+}
+.call-to-action picture {
+    display: flex;
+    height: 100%;
+}
+.call-to-action img {
+    height: -webkit-fill-available;
+    width: 100%;
+    height: auto;
 }
 .call-to-action .welcome {
     color: white;
@@ -258,6 +270,22 @@ hr {
     display: block;
 }
 .spot:hover .icon { color: white; }
+.wheater-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.wheater-image .temp { display: flex; }
+.wheater-image p, .wheater-image span {
+    font-family: var(--lora);
+    font-size: 36px;
+    font-weight: bold;
+    margin: auto 0;
+}
+.wheater-image i {
+    font-size: 70px;
+    color: var(--secondary-color);
+}
 .brand { margin: 0 auto; }
 .brand img { 
     width: 100%;
