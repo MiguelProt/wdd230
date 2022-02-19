@@ -1,0 +1,13 @@
+main { max-width: 100%; }
+.gallery {
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+h1 { text-align: center; }
+.gallery picture {
+    width: auto;
+    max-width: 300px;
+    margin: 0 auto;
+}
