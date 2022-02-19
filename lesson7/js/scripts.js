@@ -6,10 +6,7 @@ const loadImages = (image) => {
         image.removeAttribute('data-src');
     };
 };
-imagesToLoad.forEach((img) => {
-    console.log(img.getAttribute('data-src'));
-    loadImages(img);
-});
+
 if('IntersectionObserver' in window) {
     const observer = new IntersectionObserver((items, observer) => {
         items.forEach((item) => {
