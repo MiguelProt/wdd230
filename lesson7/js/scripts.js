@@ -7,6 +7,7 @@ const loadImages = (image) => {
     };
 };
 imagesToLoad.forEach((img) => {
+    console.log(img.getAttribute('data-src'));
     loadImages(img);
 });
 if('IntersectionObserver' in window) {
