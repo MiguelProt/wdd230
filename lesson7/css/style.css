@@ -11,3 +11,9 @@ h1 { text-align: center; }
     max-width: 300px;
     margin: 0 auto;
 }
+.gallery picture img[data-src] {
+    filter: blur(2px);
+}
+.gallery picture img {
+    filter: blur(0);
+}
