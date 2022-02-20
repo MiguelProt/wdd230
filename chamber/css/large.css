@@ -74,4 +74,9 @@
         display: block!important;
     }
     .spot .message { font-size: 14px; }
+    .gallery picture img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px var(--accent2-color);
+    }
+    .yellow { grid-column: 1/4; }
 }

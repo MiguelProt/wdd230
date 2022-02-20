@@ -96,6 +96,11 @@
         left: calc(50% - 8px);
     }
     .join { display: block; }
+    .gallery picture img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px var(--accent2-color);
+    }
+    .yellow { grid-column: 1/4; }
 }
 
 @media screen and (min-width: 481px) and (max-width: 730px ) {
@@ -119,4 +124,9 @@
         grid-row: 2;
     }
     .footer-contact h3 { text-align: left; }
+    .gallery picture img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 10px var(--accent2-color);
+    }
+    .yellow { grid-column: 1/4; }
 }

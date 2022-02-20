@@ -395,10 +395,6 @@ footer .columns {
     width: 100%;
     transition: all 0.3s;
 }
-.gallery picture img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px var(--accent2-color);
-}
 .gallery picture img[data-src] {
     filter: blur(2px);
 }
