@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to Cancun's Chamber of Commerce">
+    <title>Cancun's Chamber of Commerce</title>
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital,wght@0,400;0,700;1,600&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+</head>
+<body>
+    
+    <div class="container">
+        <header>
+            <div class="brand">
+                <img src="./images/full_logo.webp" alt="Cancun's Chamber of Commerce">
+            </div>
+            <nav class="menu">
+                <span class="mobile-menu">Menu &#9776;</span>
+                <ul class="menu-items">
+                    <li class="selected">
+                        <a href="./">Home</a>
+                    </li>
+                    <li>
+                        <a href="./discover.html">Discover</a>
+                    </li>
+                    <li>
+                        <a href="#">Directory</a>
+                    </li>
+                    <li>
+                        <a href="#">Join</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="social-media">
+                <a class="fb" href="#" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a class="yt" href="#" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <div class="date"></div>
+        </header>
+               
+        <main>
+            <div class="disc-grid">
+                <picture class="pic-1">
+                    <img data-src="./images/disc_1.webp" src="./images/placeholder.png" alt="Cancun">
+                </picture>
+                <p class="text-1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta quaerat iure asperiores sit laudantium nulla, saepe provident vel officia.
+                </p>
+                <p class="text-2">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta quaerat iure asperiores sit laudantium nulla, saepe provident vel officia.
+                </p>
+                <picture class="pic-2">
+                    <img data-src="./images/disc_1.webp" src="./images/placeholder.png" alt="Cancun">
+                </picture>
+                <picture class="pic-3">
+                    <img data-src="./images/disc_1.webp" src="./images/placeholder.png" alt="Cancun">
+                </picture>
+                <p class="text-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde soluta quaerat iure asperiores sit laudantium nulla, saepe provident vel officia.
+                </p>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <div class="columns">
+                <div class="footer-logo">
+                    <img src="./images/full_logo.webp" alt="Cancun's Chamber of Commerce">
+                </div>
+                <div class="footer-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40313.92854979775!2d-86.85776401124028!3d21.150753474617556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2b05aef653db%3A0xce32b73c625fcd8a!2zQ2FuY8O6biwgUS5SLg!5e0!3m2!1ses-419!2smx!4v1643511490022!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <a href="mailto:info@cancunschamber.com" target="_blank">info@cancunschamber.com</a>
+                    <a href="tel:+529981210000" target="_blank">+52 998 121 0000</a>
+                </div>
+            </div>
+            <div class="info">
+                <p class="copy">&copy; <span id="year"></span> .:|:. Miguel I. Prot Garcia .:|:. Cancun Q. Roo, Mx. <br> <small>Last Updated: <span id="fullDate"></span></small></p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/scripts.js"></script>
+</body>
+</html>

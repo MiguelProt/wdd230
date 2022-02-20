@@ -363,3 +363,32 @@ footer .columns {
     line-height: 18px!important;
     font-weight: 300;
 }
+.disc-grid {
+    padding: 1.5rem;
+    display: grid;
+    grid-template: 1fr/ 1fr;
+    grid-gap: 20px;
+}
+.pic-1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+.text-1 {
+    grid-column: 1;
+    grid-row: 2;
+}
+.pic-2 {
+    grid-column: 1;
+    grid-row: 3;
+}
+.pic-3 {
+
+}
+
+.text-3 {
+
+}
+.disc-grid img {
+    width: auto;
+    max-width: 100%;
+}

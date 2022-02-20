@@ -11,10 +11,12 @@
 
     const special_banner = document.getElementById('top-banner')
 
-    if (weekDay == 1 || weekDay == 2)
-        special_banner.style.display = 'block';
-    else
-        special_banner.style.display = 'none';
+    if(special_banner) {
+        if (weekDay == 1 || weekDay == 2)
+            special_banner.style.display = 'block';
+        else
+            special_banner.style.display = 'none';
+    }
 
 
     document.getElementById("year").innerHTML = year;

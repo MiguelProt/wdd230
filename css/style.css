@@ -48,6 +48,14 @@ h1, h2, h3, h4, h5, h6 { color: #687178; }
     color: #687178;
 }
 .list-lessons li a { font-weight: normal; }
+.sublist-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.sublist-elements > div {
+    display: inline-grid;
+}
 .message {
     font-style: italic;
     font-size: 95%;
