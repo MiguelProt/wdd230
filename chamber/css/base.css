@@ -401,3 +401,6 @@ footer .columns {
 .gallery picture img {
     filter: blur(0);
 }
+.form {
+    padding: 2rem;
+}

@@ -71,7 +71,6 @@ h1, h2, h3, h4, h5, h6 { color: #687178; }
     width: calc(100% - 30px);
 }
 .footer p small { color: greenyellow; }
-
 @media screen and ( max-width: 480px){
     .container { 
         margin: .75em;
