@@ -404,3 +404,13 @@ footer .columns {
 .form {
     padding: 2rem;
 }
+form label {
+    width: calc(100% - 24px);
+    float: left;
+    padding: 10px;
+    min-height: 50px;
+    display: inline-grid;
+}
+form label input, 
+form label select,
+form label textarea { min-width: 100%;}

@@ -101,6 +101,14 @@
         box-shadow: 0 0 10px var(--accent2-color);
     }
     .yellow { grid-column: 1/4; }
+    form label {
+        width: 100%;
+        max-width: calc(50% - 24px);
+        float: left;
+        padding: 10px;
+        min-height: 50px;
+        display: inline-grid;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 730px ) {

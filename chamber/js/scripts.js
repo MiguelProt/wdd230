@@ -9,7 +9,8 @@
     let time = `${today.getHours()}:${today.getMinutes()}:${today.getSeconds()}`;
     let dateTime = `${date} ${time}`;
 
-    const special_banner = document.getElementById('top-banner')
+    const special_banner = document.getElementById('top-banner');
+    const input_date = document.querySelector("[name='date']");
 
     if(special_banner) {
         if (weekDay == 1 || weekDay == 2)
@@ -18,6 +19,9 @@
             special_banner.style.display = 'none';
     }
 
+    if(input_date) {
+        input_date.textContent = dateTime;
+    }
 
     document.getElementById("year").innerHTML = year;
     document.getElementById("fullDate").innerHTML = dateTime;
