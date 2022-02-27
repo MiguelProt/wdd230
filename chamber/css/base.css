@@ -35,6 +35,7 @@ h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
     justify-content: center;
 }
 .btn {
+    cursor: pointer;
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 3px;
@@ -426,3 +427,10 @@ fieldset {
     border-radius: 3px;
     color: var(--accent2-color);
 }
+input[type="submit"] {
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    border: none;
+}
+.text-center { text-align: center; }
