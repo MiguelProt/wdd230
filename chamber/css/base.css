@@ -413,4 +413,16 @@ form label {
 }
 form label input, 
 form label select,
-form label textarea { min-width: 100%;}
+form label textarea { 
+    min-width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 7px;
+    border-radius: 3px;
+    border: solid 1px lightgray;
+}
+fieldset {
+    padding: 0.35em 0.75em 0.625em;
+    border: solid 1px var(--primary-color);
+    border-radius: 3px;
+    color: var(--accent2-color);
+}
