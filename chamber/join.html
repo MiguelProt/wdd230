@@ -63,17 +63,13 @@
         <main class="form">
             <form action="./thankyou.html" method="get">
                 <fieldset>
-                    <legend>Main Information</legend>
+                    <legend>General Information</legend>
                     <label for="first_name">First Name*: 
                         <input type="text" placeholder="Jhon" name="first_name" id="first_name" required>
                     </label>
 
                     <label for="last_name">Last Name*: 
                         <input type="text" placeholder="Doe" name="last_name" id="last_name" required>
-                    </label>
-
-                    <label for="title">Business Position: 
-                        <input type="text" name="title" id="title" pattern="[a-zA-Z-_\s]{7,}" title="This field accepts alpha characters, hyphens, and spaces with a minimum of seven characters">
                     </label>
 
                     <label for="email">Email*: 
@@ -86,9 +82,13 @@
                 </fieldset>
                 <br>
                 <fieldset>
-                    <legend>Business</legend>
+                    <legend>Business Details</legend>
                     <label for="business_name">Business Name*: 
                         <input type="text" name="business_name" id="business_name" required>
+                    </label>
+
+                    <label for="title">Business Position: 
+                        <input type="text" name="title" id="title" pattern="[a-zA-Z-_\s]{7,}" title="This field accepts alpha characters, hyphens, and spaces with a minimum of seven characters">
                     </label>
 
                     <label for="membership">Membership: 
@@ -106,7 +106,7 @@
                     <input type="hidden" name="date">
                 </fieldset>
                 <p class="text-center">
-                    <input class="btn" type="submit" value="Send">
+                    <input class="btn" type="submit" value="Join the Chamber">
                 </p>
             </form>
         </main>
