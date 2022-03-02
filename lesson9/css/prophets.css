@@ -1,8 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&family=Roboto+Serif:wght@100;200;300;500&display=swap');
 
-* {
-    font-family: 'Open Sans', sans-serif;
-}
+* { font-family: 'Open Sans', sans-serif; }
+body { background-color: #f1f1f3;}
 h1 { 
     text-align: center; 
     height: 100px;
@@ -30,7 +29,7 @@ h1::after, h1::before {
 h1::before {
     right: 0;
     left: auto;
-    transform: rotate(180deg);
+    transform: rotateY(180deg);
 }
 .cards {
     background-color: #d6f3f8;
@@ -42,6 +41,7 @@ h1::before {
     grid-template: auto / repeat(auto-fit, minmax(auto, 1fr));
     grid-gap: 1rem;
     padding: 1.5rem;
+    border: solid 1px #989a9c;
 }
 .cards section {
     background-color: #f1f1f3;
