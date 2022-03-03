@@ -25,7 +25,7 @@ displayCompany = (company) => {
 
     name.textContent = company.name;
     address.textContent = `Address: ${company.address}`;
-    tel.textContent = `Telephone: ${company.tel}`;
+    tel.textContent = `Telephone: ${(company.tel == null) ? 'Not available' : company.tel}`;
     website.setAttribute("href", company.website);
     website.setAttribute('target', "_blank");
     website.textContent = company.website;
@@ -67,7 +67,7 @@ document.getElementById('list').addEventListener('click', function () {
 
         name.textContent = c.name;
         address.textContent = c.address;
-        tel.textContent = c.tel;
+        tel.textContent = (c.tel == null) ? 'Not available' : c.tel;
         website.textContent = c.website;
 
         tr.appendChild(name);
