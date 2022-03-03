@@ -1,0 +1,39 @@
+{
+    "companies": [
+        {
+            "name":     "Google",
+            "address":  "Mountain View, California, United States",
+            "tel":      null,
+            "website":  "https://google.com.mx",
+            "image":    "./images/company/google.png"
+        },
+        {
+            "name":     "Google",
+            "address":  "Mountain View, California, United States",
+            "tel":      null,
+            "website":  "https://google.com.mx",
+            "image":    "./images/company/google.png"
+        },
+        {
+            "name":     "Google",
+            "address":  "Mountain View, California, United States",
+            "tel":      null,
+            "website":  "https://google.com.mx",
+            "image":    "./images/company/google.png"
+        },
+        {
+            "name":     "Google",
+            "address":  "Mountain View, California, United States",
+            "tel":      null,
+            "website":  "https://google.com.mx",
+            "image":    "./images/company/google.png"
+        },
+        {
+            "name":     "Google",
+            "address":  "Mountain View, California, United States",
+            "tel":      null,
+            "website":  "https://google.com.mx",
+            "image":    "./images/company/google.png"
+        }
+    ]
+}

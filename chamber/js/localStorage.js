@@ -8,19 +8,19 @@ new_v = new Date().getTime();
 
 let daysBetween = Math.round((new_v - last_v) / FACTOR)
 
-console.log(window.localStorage.getItem('visits'));
+/*console.log(window.localStorage.getItem('visits'));
 console.log(daysBetween, ( new_v - last_v), 12);
 console.log(new_v);
-console.log(last_v);
+console.log(last_v);*/
 
 if (window.localStorage.getItem('visits') == null ) {
     window.localStorage.setItem('visits', 1);
 } else {
-    console.log('Mas de una vuelta');
+    //console.log('Mas de una vuelta');
     window.localStorage.setItem('visits', parseInt(window.localStorage.getItem('visits')) + 1);
 }
 
-console.log(window.localStorage.getItem('visits'), window.localStorage.getItem('last_visit'));
+//console.log(window.localStorage.getItem('visits'), window.localStorage.getItem('last_visit'));
 
 days_message = (window.localStorage.getItem('last_visit') == null) ? ', Welcome by First Time!' : ', Last Visited: ' + daysBetween + ' day(s) ago.';
 

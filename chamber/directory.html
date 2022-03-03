@@ -32,13 +32,13 @@
                     <li>
                         <a href="./">Home</a>
                     </li>
-                    <li>
+                    <li class="selected">
                         <a href="./discover.html">Discover</a>
                     </li>
                     <li>
                         <a href="./directory.html">Directory</a>
                     </li>
-                    <li class="selected">
+                    <li>
                         <a href="./join.html">Join</a>
                     </li>
                     <li>
@@ -59,56 +59,13 @@
                 <div class="date"></div>
             </div>
         </header>
-               
-        <main class="form">
-            <form action="./thankyou.html" method="get">
-                <fieldset>
-                    <legend>General Information</legend>
-                    <label for="first_name">First Name*: 
-                        <input type="text" placeholder="Jhon" name="first_name" id="first_name" required>
-                    </label>
 
-                    <label for="last_name">Last Name*: 
-                        <input type="text" placeholder="Doe" name="last_name" id="last_name" required>
-                    </label>
-
-                    <label for="email">Email*: 
-                        <input type="email" placeholder="jhonDoe@mail.com" name="email" id="email" required>
-                    </label>
-
-                    <label for="celphone">Cellphone*: 
-                        <input type="tel" placeholder="9981210000" name="celphone" id="celphone" required>
-                    </label>
-                </fieldset>
-                <br>
-                <fieldset>
-                    <legend>Business Details</legend>
-                    <label for="business_name">Business Name*: 
-                        <input type="text" name="business_name" id="business_name" required>
-                    </label>
-
-                    <label for="title">Business Position: 
-                        <input type="text" name="title" id="title" pattern="[a-zA-Z-_\s]{7,}" title="This field accepts alpha characters, hyphens, and spaces with a minimum of seven characters">
-                    </label>
-
-                    <label for="membership">Membership: 
-                        <select name="membership" id="membership">
-                            <option value="">Select your memebership</option>
-                            <option value="0">NP Membership is for non profit organizations and there is no fee.</option>
-                            <option value="1">Bronze Membership.</option>
-                            <option value="2">Silver Membership</option>
-                            <option value="3">Gold Membership</option>
-                        </select>
-                    </label>
-                    <label for="business_desc">Description: 
-                        <textarea name="business_desc" id="business_desc" cols="30" rows="4" placeholder="Describe your business"></textarea>
-                    </label>
-                    <input type="hidden" name="date">
-                </fieldset>
-                <p class="text-center">
-                    <input class="btn" type="submit" value="Join the Chamber">
-                </p>
-            </form>
+        <main>
+            <div class="type-of-list">
+                <button id="grid" class="selected"><i class="fa-solid fa-grip"></i></button>
+                <button id="list"><i class="fa-solid fa-list"></i></button>
+            </div>
+            <div class="cards"></div>
         </main>
         
         <footer class="footer">
@@ -132,6 +89,8 @@
     </div>
 
     <script src="./js/scripts.js"></script>
+    <script src="./js/lazyload.js"></script>
     <script src="./js/localStorage.js"></script>
+    <script src="./js/companies.js"></script>
 </body>
 </html>

@@ -434,3 +434,62 @@ input[type="submit"] {
     border: none;
 }
 .text-center { text-align: center; }
+.type-of-list {
+    padding: 2rem;
+    text-align: center;
+}
+.type-of-list button {
+    font-size: 32px;
+    padding: 7px;
+    background: white;
+    color: var(--primary-color);
+    border: solid 1px var(--primary-color);
+}
+.type-of-list button:hover {
+    cursor: pointer;
+}
+.type-of-list button.selected {
+    background-color: var(--primary-color);
+    color: white;
+}
+.cards {
+    display: grid;
+    grid-template: auto / repeat(1, minmax(auto, 1fr));
+    grid-gap: 2rem;
+    word-break: break-word;
+    padding: 1rem;
+}
+.cards.list { display: block; }
+.cards section {
+    padding: 1rem;
+    box-shadow: 1px 1px 5px var(--accent2-color);
+    margin: 1rem;
+    background-color: rgba(255, 255, 255, 0.712);
+    text-align: center;
+}
+.cards section img {
+    width: 100%;
+}
+table {
+    width: 100%;
+    border-spacing: 0;
+}
+/* table * { border: solid 1px var(--accent2-color)} */
+thead {
+    background-color: var(--accent1-color);
+    color: white;
+    border: solid 1px red;
+}
+thead tr th {
+    word-break: keep-all;
+    padding: 1rem 1.5rem;
+    border-bottom: solid 1px var(--accent2-color);
+}
+tbody tr th { padding: 1rem .5rem; }
+tbody tr:nth-child(odd) {
+    background-color: #dddddd;
+}
+tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+table tr th:nth-of-type(3) { display: none; }

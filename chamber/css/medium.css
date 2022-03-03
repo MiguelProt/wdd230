@@ -101,7 +101,12 @@
         box-shadow: 0 0 10px var(--accent2-color);
     }
     .yellow { grid-column: 1/4; }
-    
+    .cards { grid-template: auto / repeat(3, minmax(auto, 1fr)); }
+    .cards section {
+        margin: 0!important;
+        width: calc(100% - 2rem);
+    }
+    table tr th:nth-of-type(3) { display: block; }
 }
 
 @media screen and (min-width: 481px) and (max-width: 730px ) {
@@ -130,4 +135,10 @@
         box-shadow: 0 0 10px var(--accent2-color);
     }
     .yellow { grid-column: 1/4; }
+    .cards { grid-template: auto / repeat(2, minmax(auto, auto)); }
+    .cards section {
+        margin: 0!important;
+        width: calc(100% - 2rem);
+    }
+    table tr th:nth-of-type(3) { display: block; }
 }
