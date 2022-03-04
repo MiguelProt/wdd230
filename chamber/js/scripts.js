@@ -20,7 +20,7 @@
     }
 
     if(input_date) {
-        input_date.textContent = dateTime;
+        input_date.value = dateTime;
     }
 
     document.getElementById("year").innerHTML = year;
