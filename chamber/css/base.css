@@ -299,6 +299,9 @@ hr {
     flex-direction: row;
     justify-content: space-around;
 }
+.wheater-image > img {
+    width: 75px;
+}
 .wheater-image .temp { display: flex; }
 .wheater-image p, .wheater-image span {
     font-family: var(--lora);
