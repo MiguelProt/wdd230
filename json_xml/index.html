@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON vs XML</title>
+    <style>
+        main { text-align: center; }
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #json, #xml{
+            display: block;
+            width: 45%;
+            min-height: 200px;
+            border: solid 1px gray;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>JSON vs XML</h1>
+        <div class="container">
+            <div id="json"></div>
+            <div id="xml"></div>
+        </div>
+    </main>
+
+    <script>
+        (() => {
+            const requestJSON = "./json.json";
+            const requestXML = "./xml.xml";
+
+            fetch(requestJSON)
+                .then( response => response.json())
+                .then( (data) => {
+                    const users = data.users;
+                    const containerJSON = document.getElementById("json");
+                    //console.table(users);
+                    
+                    users.forEach( user => {
+                        let element = document.createElement('h3');
+                        element.textContent = `Full Name: ${user.name} ${user.last_name}, `;
+                        let small = document.createElement('small');
+                        small.textContent = `Age: ${user.age}, Sex: ${user.sex}, `
+                        element.appendChild(small);
+                        containerJSON.appendChild(element);
+
+                    });
+                })
+
+            fetch(requestXML)
+                .then( response => response.text())
+                .then( (data) => {
+                    let parser = new DOMParser();
+                    let xmlDoc = parser.parseFromString(data, 'text/xml');
+                    const containerXML = document.getElementById('xml');
+
+                    const users = xmlDoc.getElementsByTagName('user');
+                    console.log(users[1]);
+
+                    for (let index = 0; index < users.length; index++) {
+                        const user = users[index];
+                        let element = document.createElement('h3');
+
+                        element.textContent = `Full Name: ${user.getElementsByTagName('name')[0].textContent } ${user.getElementsByTagName('last_name')[0].textContent }, `;
+                        let small = document.createElement('small');
+                        small.textContent = `Age: ${user.getElementsByTagName('age')[0].textContent }, Sex: ${user.getElementsByTagName('sex')[0].textContent }, `
+                        element.appendChild(small);
+                        containerXML.appendChild(element);
+                    }
+
+                })
+        })();
+    </script>
+</body>
+</html>

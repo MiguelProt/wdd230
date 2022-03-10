@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<users id="users">
+    <user>
+        <name>Miguel</name>
+        <last_name>Prot</last_name>
+        <age>29</age>
+        <sex>Male</sex>
+    </user>
+    <user>
+        <name>Alex</name>
+        <last_name>Garcia</last_name>
+        <age>20</age>
+        <sex>Male</sex>
+    </user>
+</users>

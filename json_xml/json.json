@@ -1,0 +1,16 @@
+{
+    "users": [
+        {
+            "name": "Miguel", 
+            "last_name": "Prot",
+            "age": 29,
+            "sex": "Male"
+        },
+        {
+            "name": "Alex",
+            "last_name": "Garcia",
+            "age": 20,
+            "sex": "Male"
+        }
+    ]
+}
