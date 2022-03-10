@@ -1,5 +1,5 @@
 //Wheater API
-const apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=Fairbanks&units=imperial&appid=4e41a30936e84b168845a6640287d9db';
+const apiURL = 'https://api.openweathermap.org/data/2.5/weather?q=Cancun&units=imperial&appid=4e41a30936e84b168845a6640287d9db';
 
 fetch( apiURL )
     .then( response => response.json())
