@@ -3,7 +3,10 @@
 body {
     font-family: 'Smooch Sans', sans-serif;
 }
-h1 { font-size: 45px; font-weight: 900; }
+h1 { 
+    font-size: 45px; 
+    font-weight: 900; 
+}
 p { font-size: 24px; }
 b { font-weight: 600; }
 img { width: 75px; }
