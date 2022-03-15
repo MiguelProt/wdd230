@@ -10,6 +10,7 @@ fetch(requestURL)
     });
 
 displayProphets = (prophet) => {
+    console.log(prophet);
     // Create elements to add to the document
     let card = document.createElement('section');
     let h2 = document.createElement('h2');

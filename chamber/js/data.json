@@ -27,6 +27,62 @@
             "tel":      "9988841900",
             "website":  "https://hiplot.net/",
             "image":    "./images/company/hiplot.svg"
+        },
+        {
+            "name":     "Google",
+            "address":  "Mountain View, California, United States",
+            "tel":      null,
+            "website":  "https://google.com.mx",
+            "image":    "./images/company/google.png"
+        },
+        {
+            "name":     "Wayaweb",
+            "address":  "Torres del Bosque II, Cancun, Q.Roo, Mex",
+            "tel":      9981212135,
+            "website":  "https://wayaweb.com.mx",
+            "image":    "./images/company/wayaweb.png"
+        },
+        {
+            "name":     "Grupo Regio",
+            "address":  "Av. Andrés Quintana Roo SM 98, Mz 66, Lt 2-05. Mpio. Benito Juárez en Cancún, Quintana Roo, México. C.P. 77537",
+            "tel":      "9981958653",
+            "website":  "https://gruporegio.mx/",
+            "image":    "./images/company/regio.png"
+        },
+        {
+            "name":     "Hiplot",
+            "address":  "AV. Palenque Mz. 1 No 84 Sm 27 Cancun Q. Roo, Mexico",
+            "tel":      "9988841900",
+            "website":  "https://hiplot.net/",
+            "image":    "./images/company/hiplot.svg"
+        },
+        {
+            "name":     "Google",
+            "address":  "Mountain View, California, United States",
+            "tel":      null,
+            "website":  "https://google.com.mx",
+            "image":    "./images/company/google.png"
+        },
+        {
+            "name":     "Wayaweb",
+            "address":  "Torres del Bosque II, Cancun, Q.Roo, Mex",
+            "tel":      9981212135,
+            "website":  "https://wayaweb.com.mx",
+            "image":    "./images/company/wayaweb.png"
+        },
+        {
+            "name":     "Grupo Regio",
+            "address":  "Av. Andrés Quintana Roo SM 98, Mz 66, Lt 2-05. Mpio. Benito Juárez en Cancún, Quintana Roo, México. C.P. 77537",
+            "tel":      "9981958653",
+            "website":  "https://gruporegio.mx/",
+            "image":    "./images/company/regio.png"
+        },
+        {
+            "name":     "Hiplot",
+            "address":  "AV. Palenque Mz. 1 No 84 Sm 27 Cancun Q. Roo, Mexico",
+            "tel":      "9988841900",
+            "website":  "https://hiplot.net/",
+            "image":    "./images/company/hiplot.svg"
         }
     ]
 }
