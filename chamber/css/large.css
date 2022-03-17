@@ -85,6 +85,9 @@
         width: calc(100% - 2rem);
     }
     table tr th:nth-of-type(3) { display: block; }
+    .contact {
+        grid-template: auto / 2fr 1fr!important;
+    }
 }
 @media screen and (min-width: 1367px) {
     .cards { grid-template: auto / repeat(4, minmax(auto, auto)); }
@@ -93,4 +96,7 @@
         width: calc(100% - 2rem);
     }
     table tr th:nth-of-type(3) { display: block; }
+    .contact {
+        grid-template: auto / 2fr 1fr!important;
+    }
 }

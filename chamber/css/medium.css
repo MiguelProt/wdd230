@@ -107,6 +107,9 @@
         width: calc(100% - 2rem);
     }
     table tr th:nth-of-type(3) { display: block; }
+    .contact {
+        grid-template: auto / 2fr 1fr!important;
+    }
 }
 
 @media screen and (min-width: 481px) and (max-width: 730px ) {
@@ -141,4 +144,7 @@
         width: calc(100% - 2rem);
     }
     table tr th:nth-of-type(3) { display: block; }
+    .contact {
+        grid-template: auto / 2fr 1fr!important;
+    }
 }

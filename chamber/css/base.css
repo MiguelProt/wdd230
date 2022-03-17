@@ -499,3 +499,22 @@ tbody tr:nth-child(even) {
     background-color: #f9f9f9;
 }
 table tr th:nth-of-type(3) { display: none; }
+
+.contact {
+    display: grid;
+    padding: 1em 2em;
+    gap: 20px;
+}
+.contact > .content,
+.contact > aside {
+    grid-template-columns: 1;
+    text-align: center;
+    grid-template: auto / auto;
+}
+.contact form {
+    background: white;
+    padding: 1rem 2rem;
+    width: calc(100% - 4rem);
+    box-shadow: 1px 3px 10px #3e3e3e3d;
+    text-align: left;
+}

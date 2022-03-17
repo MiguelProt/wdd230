@@ -35,13 +35,13 @@
                     <li>
                         <a href="./discover.html">Discover</a>
                     </li>
-                    <li class="selected">
+                    <li>
                         <a href="./directory.html">Directory</a>
                     </li>
                     <li>
                         <a href="./join.html">Join</a>
                     </li>
-                    <li>
+                    <li class="selected">
                         <a href="./contact.html">Contact</a>
                     </li>
                 </ul>
@@ -59,13 +59,65 @@
                 <div class="date"></div>
             </div>
         </header>
+               
+        <main class="contact">
+            <div class="content">
+                <iframe
+                    width="600"
+                    height="450"
+                    style="border:0"
+                    loading="lazy"
+                    allowfullscreen
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDKiveIfGrVYFch2ZRelvcMCLI2G5drkFI
+                        &q=Space+Needle,Seattle+WA">
+                </iframe>
+                <form action="./thankyou.html" method="get">
+                    <h1>Contact Form</h1>
+                    <p><i>* Indicates required field</i></p>
 
-        <main>
-            <div class="type-of-list">
-                <button id="grid" class="selected"><i class="fa-solid fa-grip"></i></button>
-                <button id="list"><i class="fa-solid fa-list"></i></button>
+                    <fieldset>
+                        <legend>Needed Information</legend>
+                        <label for="first_name">Name*: 
+                            <input type="text" placeholder="Jhon" name="first_name" id="first_name" required>
+                        </label>
+    
+                        <label for="email">Email*: 
+                            <input type="email" placeholder="jhonDoe@mail.com" name="email" id="email" required>
+                        </label>
+
+                        <label for="business_desc">Description: 
+                            <textarea name="business_desc" id="business_desc" cols="30" rows="4" placeholder="Describe your business"></textarea>
+                        </label>
+                        <input type="hidden" name="date">
+                    </fieldset>
+                    <p class="text-center">
+                        <input class="btn" type="submit" value="Submit">
+                    </p>
+                </form>
             </div>
-            <div class="cards"></div>
+            <aside>
+                <h2>Redding Chamber of Commerce</h2>
+                <p>1321 Cancun, Q. Roo, Mx, 77500</p>
+
+                <h2>Schedule</h2>
+                <p><b>Monday - Thursday:</b> 9:00 a.m. to 4:30 p.m. <br> <b>Friday</b>: By Appointment Only</p>
+
+                <h2>Contact Information</h2>
+                <p>
+                    <a href="mailto:info@cancunschamber.com" target="_blank">info@cancunschamber.com</a>
+                </p>
+                <p>
+                    <a href="tel:+529981210000" target="_blank">+52 998 121 0000</a>
+                </p>
+                <div class="social-media">
+                    <a class="fb" href="#" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="yt" href="#" target="_blank">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </aside>
         </main>
         
         <footer class="footer">
@@ -91,6 +143,5 @@
     <script src="./js/scripts.js"></script>
     <script src="./js/lazyload.js"></script>
     <script src="./js/localStorage.js"></script>
-    <script src="./js/companies.js"></script>
 </body>
 </html>
