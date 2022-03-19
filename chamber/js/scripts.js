@@ -59,7 +59,7 @@ fetch(requestURL)
     });
 
     displayCompany = (company, size) => {
-        
+        console.log(company);
         for (let i = 0; i < 3; i++){
             const spots = document.querySelector('.spotlights');
             // Create elements to add to the document
@@ -92,6 +92,7 @@ fetch(requestURL)
             card.appendChild(website);
 
             spots.appendChild(card);
+            console.log(company[random_index])
             company.splice(random_index, 1);
             size--;
         }
