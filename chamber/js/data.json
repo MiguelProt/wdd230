@@ -5,14 +5,14 @@
             "address":  "Mountain View, California, United States",
             "tel":      null,
             "website":  "https://google.com.mx",
-            "image":    "./images/company/google.png"
+            "image":    "./images/company/google.webp"
         },
         {
             "name":     "Wayaweb",
             "address":  "Torres del Bosque II, Cancun, Q.Roo, Mex",
             "tel":      9981212135,
             "website":  "https://wayaweb.com.mx",
-            "image":    "./images/company/wayaweb.png"
+            "image":    "./images/company/wayaweb.webp"
         },
         {
             "name":     "Grupo Regio",
@@ -33,49 +33,49 @@
             "address":  "AV. Lakin Mz. 1 No 84 Sm 27 Cancun Q. Roo, Mexico",
             "tel":      "8924040",
             "website":  "https://www.facebook.com/Tere-Cazola-582830488789188",
-            "image":    "./images/company/tere.png"
+            "image":    "./images/company/tere.webp"
         },
         {
             "name":     "Tentazioni",
             "address":  "AV. 135, Cancun Q. Roo, Mexico",
             "tel":      "9984238496",
             "website":  "https://www.facebook.com/PasteleriatentazioniPG",
-            "image":    "./images/company/tenta.jpeg"
+            "image":    "./images/company/tenta.webp"
         },
         {
             "name":     "Sushi Ken",
             "address":  "AV. Konhunlich, Cancun Q. Roo, Mexico",
             "tel":      "998 892 2331",
             "website":  "http://www.sushi-ken.com.mx/",
-            "image":    "./images/company/sushi.png"
+            "image":    "./images/company/sushi.webp"
         },
         {
             "name":     "Hong Kong",
             "address":  "AV. Lopez Portillo, Cancun Q. Roo, Mexico",
             "tel":      "998 892 0000",
             "website":  "http://www.ghk.mx/default.shtml",
-            "image":    "./images/company/hk.jpg"
+            "image":    "./images/company/hk.webp"
         },
         {
             "name":     "Crío",
             "address":  "AV. Lopez Portillo, Km. 202, Cancun Q. Roo, Mexico",
             "tel":      "998 892 1234",
             "website":  "https://www.grupo-crio.com/",
-            "image":    "./images/company/crio.png"
+            "image":    "./images/company/crio.webp"
         },
         {
             "name":     "Grupo Asesores",
             "address":  "Av. Kabah Manzana 3, Lote 4, Exterior A, PB, Supermanzana 17,, 77505 Cancún, Q.R.",
             "tel":      "+529988812700",
             "website":  "http://www.ga.com.mx/",
-            "image":    "./images/company/ga.png"
+            "image":    "./images/company/ga.webp"
         },
         {
             "name":     "Bepensa",
             "address":  "Calle 60 diagonal # 493 Fracc. Parque industrial Merida Yucatan C.P 97300",
             "tel":      "800 712 05 00",
             "website":  "https://www.bepensa.com",
-            "image":    "./images/company/bepensa.png"
+            "image":    "./images/company/bepensa.webp"
         },
         {
             "name":     "Bimbo",
