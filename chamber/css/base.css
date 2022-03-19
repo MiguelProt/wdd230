@@ -51,13 +51,14 @@ h1 > small, h2 > small, h3 > small, h4 > small, h5 > small, h6 > small {
     color: white;
 }
 body {
-    background-image: url(../images/bg-cancun.webp);
+    background-image: url(../images/original-small.webp);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    backdrop-filter: blur(5px);
 }
 
 .container {
