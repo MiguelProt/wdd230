@@ -237,7 +237,7 @@ div#top-banner h2{
     left: 0;
     top: 0;
     width: 100%;
-    height: 1000px;
+    height: 100%;
     transition: all 0.3s;
 }
 .call-to-action picture {
@@ -275,10 +275,20 @@ div#top-banner h2{
     border: solid 1px white;
 }
 .spot { margin: 10px; }
-.spot > h4 { text-transform: capitalize; }
+.spot > h4 { 
+    text-transform: capitalize; 
+    margin: 5px auto;
+}
+.spot p, .spot a {
+    margin: 3px auto;
+    font-size: 16px;
+}
 .spot > .icon {
     font-size: 60px;
     color: var(--accent2-color);
+}
+.spot > img {
+    width: 80px;
 }
 .spot > .content .message { font-style: italic; }
 .spot:nth-of-type(3) { display: none; }

@@ -23,7 +23,7 @@ displayCompany = (company) => {
     logo.setAttribute('alt', `Logo of ${company.name}`);
     logo.setAttribute('loading', 'lazy');
 
-    name.textContent = company.name;
+    name.textContent = `${company.name} - ${company.membership}`;
     address.textContent = `Address: ${company.address}`;
     tel.textContent = `Telephone: ${(company.tel == null) ? 'Not available' : company.tel}`;
     website.setAttribute("href", company.website);

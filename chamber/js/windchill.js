@@ -8,7 +8,6 @@ fetch( apiURL )
         if( data.cod == 401 || data.cod == 404 )
             console.log(`ERROR (#${data.cod}): ${data.message}`);
         else {
-            console.log(data);
             const iconSrc = 'https://openweathermap.org/img/w/' + data.weather[0].icon + '.png';
             const desc = data.weather[0].description;
             
@@ -31,7 +30,6 @@ const calc_windchill = () => {
     //const temp = cel_to_far(temp_cel);
     //const speed = kmph_to_mph(wind_speed);
 
-    console.log(temp_cel, wind_speed);
     if( temp_cel <= 50 && wind_speed > 3) {
         const windchill = 35.74 + (0.6215 * temp_cel) - (35.75 * Math.pow(wind_speed,0.16)) + (0.4275 * temp_cel * Math.pow(wind_speed,0.16));
         document.getElementById("wind_chill").innerHTML = Math.round(windchill * 10) / 10 + " M/h";

@@ -37,3 +37,64 @@
     let menu = document.querySelector('.menu-items');
     menu.classList.toggle('show');
 }));
+
+const path = window.location.pathname
+if ( path === '/chamber/') {
+    const requestURL = "./js/data.json";
+const cards = document.querySelector('.cards');
+let dataRequest;
+
+fetch(requestURL)
+    .then(request => request.json())
+    .then( ( data ) => {
+        const companies = data.companies;
+        dataRequest = companies;
+        let gold_silver = [];
+        (data.companies).forEach(c => {
+            if ( c["membership"] == "silver" || c["membership"] == "gold")
+                gold_silver.push(c);
+        });
+        
+        displayCompany(gold_silver, gold_silver.length);
+    });
+
+    displayCompany = (company, size) => {
+        
+        for (let i = 0; i < 3; i++){
+            const spots = document.querySelector('.spotlights');
+            // Create elements to add to the document
+            let name = document.createElement("h3");
+            let logo = document.createElement("img");
+            let card = document.createElement("div");
+            let address = document.createElement("p");
+            let tel = document.createElement("p");
+            let website = document.createElement("a");
+
+            card.setAttribute("class", "spot");
+            let random_index = Math.floor(Math.random() * size);
+
+            logo.setAttribute('src', company[random_index].image);
+            logo.setAttribute('alt', `Logo of ${company[random_index].name}`);
+            logo.setAttribute('loading', 'lazy');
+
+            name.textContent = company[random_index].name;
+            address.textContent = `Address: ${company[random_index].address}`;
+            tel.textContent = `Telephone: ${(company[random_index].tel == null) ? 'Not available' : company[random_index].tel}`;
+            website.setAttribute("href", company[random_index].website);
+            website.setAttribute('target', "_blank");
+            website.textContent = company[random_index].website;
+
+
+            card.appendChild(name);
+            card.appendChild(logo);
+            card.appendChild(address);
+            card.appendChild(tel);
+            card.appendChild(website);
+
+            spots.appendChild(card);
+            console.log(company[random_index])
+            company.splice(random_index, 1);
+            size--;
+        }
+    }
+}
