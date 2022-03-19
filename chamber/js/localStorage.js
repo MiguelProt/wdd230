@@ -22,9 +22,10 @@ if (window.localStorage.getItem('visits') == null ) {
 
 //console.log(window.localStorage.getItem('visits'), window.localStorage.getItem('last_visit'));
 
-days_message = (window.localStorage.getItem('last_visit') == null) ? ', Welcome by First Time!' : ', Last Visited: ' + daysBetween + ' day(s) ago.';
+days_message = (window.localStorage.getItem('last_visit') == null) ? ', Welcome by First Time!' : 'Last Visited: ' + daysBetween + ' day(s) ago.';
 
-visits.textContent = '# Visits: ' + window.localStorage.getItem('visits') + days_message;
+//visits.textContent = '# Visits: ' + window.localStorage.getItem('visits') + days_message;
+visits.textContent = days_message;
 
 window.localStorage.setItem('last_visit', new_v);
 //localStorage.clear()
