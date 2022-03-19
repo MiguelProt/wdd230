@@ -88,6 +88,8 @@
     .contact {
         grid-template: auto / 2fr 1fr!important;
     }
+    thead { display: table-header-group; }
+    tbody tr { display: table-row; }
 }
 @media screen and (min-width: 1367px) {
     .cards { grid-template: auto / repeat(4, minmax(auto, auto)); }
@@ -99,4 +101,6 @@
     .contact {
         grid-template: auto / 2fr 1fr!important;
     }
+    thead { display: table-header-group; }
+    tbody tr { display: table-row; }
 }

@@ -110,6 +110,8 @@
     .contact {
         grid-template: auto / 2fr 1fr!important;
     }
+    thead { display: table-header-group; }
+    tbody tr { display: table-row; }
 }
 
 @media screen and (min-width: 481px) and (max-width: 730px ) {
@@ -147,4 +149,6 @@
     .contact {
         grid-template: auto / 2fr 1fr!important;
     }
+    thead { display: table-header-group; }
+    tbody tr { display: table-row; }
 }

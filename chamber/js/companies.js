@@ -64,11 +64,15 @@ document.getElementById('list').addEventListener('click', function () {
         let address = document.createElement('th');
         let tel = document.createElement('th');
         let website = document.createElement('th');
+        let web_a = document.createElement('a');
 
         name.textContent = c.name;
         address.textContent = c.address;
         tel.textContent = (c.tel == null) ? 'Not available' : c.tel;
-        website.textContent = c.website;
+        web_a.setAttribute("href", c.website);
+        web_a.setAttribute('target', "_blank");
+        web_a.textContent = c.website;
+        website.appendChild(web_a);
 
         tr.appendChild(name);
         tr.appendChild(address);
