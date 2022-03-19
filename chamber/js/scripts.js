@@ -38,7 +38,8 @@
     menu.classList.toggle('show');
 }));
 
-const path = window.location.pathname
+const path = window.location.pathname;
+console.log(path);
 if ( path === '/chamber/' || path === '/wdd230/chamber/') {
     const requestURL = "./js/data.json";
     const cards = document.querySelector('.cards');
