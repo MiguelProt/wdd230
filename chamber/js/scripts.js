@@ -39,7 +39,7 @@
 }));
 
 const path = window.location.pathname;
-console.log(path);
+
 if ( path === '/chamber/' || path === '/wdd230/chamber/') {
     const requestURL = "./js/data.json";
     const cards = document.querySelector('.cards');
@@ -60,7 +60,6 @@ if ( path === '/chamber/' || path === '/wdd230/chamber/') {
         });
 
     displayCompany = (company, size) => {
-        console.log(company);
         for (let i = 0; i < 3; i++){
             const spots = document.querySelector('.spotlights');
             // Create elements to add to the document
@@ -78,7 +77,7 @@ if ( path === '/chamber/' || path === '/wdd230/chamber/') {
             logo.setAttribute('alt', `Logo of ${company[random_index].name}`);
             logo.setAttribute('loading', 'lazy');
 
-            name.textContent = company[random_index].name;
+            name.textContent = `${company[random_index].name} - ${company[random_index].membership}`;
             address.textContent = `Address: ${company[random_index].address}`;
             tel.textContent = `Telephone: ${(company[random_index].tel == null) ? 'Not available' : company[random_index].tel}`;
             website.setAttribute("href", company[random_index].website);
@@ -93,7 +92,6 @@ if ( path === '/chamber/' || path === '/wdd230/chamber/') {
             card.appendChild(website);
 
             spots.appendChild(card);
-            console.log(company[random_index])
             company.splice(random_index, 1);
             size--;
         }
