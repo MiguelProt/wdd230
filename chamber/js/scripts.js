@@ -92,7 +92,6 @@ fetch(requestURL)
             card.appendChild(website);
 
             spots.appendChild(card);
-            console.log(company[random_index])
             company.splice(random_index, 1);
             size--;
         }
