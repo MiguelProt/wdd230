@@ -39,24 +39,24 @@
 }));
 
 const path = window.location.pathname
-if ( path === '/chamber/') {
+if ( path === '/chamber/' || path === '/wdd230/chamber/') {
     const requestURL = "./js/data.json";
-const cards = document.querySelector('.cards');
-let dataRequest;
+    const cards = document.querySelector('.cards');
+    let dataRequest;
 
-fetch(requestURL)
-    .then(request => request.json())
-    .then( ( data ) => {
-        const companies = data.companies;
-        dataRequest = companies;
-        let gold_silver = [];
-        (data.companies).forEach(c => {
-            if ( c["membership"] == "silver" || c["membership"] == "gold")
-                gold_silver.push(c);
+    fetch(requestURL)
+        .then(request => request.json())
+        .then( ( data ) => {
+            const companies = data.companies;
+            dataRequest = companies;
+            let gold_silver = [];
+            (data.companies).forEach(c => {
+                if ( c["membership"] == "silver" || c["membership"] == "gold")
+                    gold_silver.push(c);
+            });
+            
+            displayCompany(gold_silver, gold_silver.length);
         });
-        
-        displayCompany(gold_silver, gold_silver.length);
-    });
 
     displayCompany = (company, size) => {
         console.log(company);
