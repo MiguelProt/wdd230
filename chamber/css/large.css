@@ -67,9 +67,6 @@
         flex-direction: column;
         justify-content: center;
     }
-    .footer-contact a{
-        text-align: left;
-    }
     .join, .spot { 
         display: block!important;
     }
