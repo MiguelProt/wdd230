@@ -56,7 +56,7 @@
                             <li><a href="#">Full-time Temple Missionary</a></li>
                         </ul>
                     </li>
-                    <li>
+                    <li class="selected">
                         <a href="./contact.html">Contact</a>
                     </li>
                 </ul>
@@ -64,10 +64,58 @@
         </nav>
     </header>
 
-    <main class="padding-top text-center">
-        <h1 class="text-center">Thanks for your message!</h1>
-        <a href="./index.html" class="btn m-center">Return to Home</a>
-        <br><br>
+    <main class="padding-top padding-sides contact">
+        <div class="content">
+            <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDKiveIfGrVYFch2ZRelvcMCLI2G5drkFI&q=cancun">
+            </iframe>
+            <form action="./thankyou.html" method="get">
+                <h1>Contact Form</h1>
+                <p><i>* Indicates required field</i></p>
+
+                <fieldset>
+                    <legend>Needed Information</legend>
+                    <label for="first_name">Name*: 
+                        <input type="text" placeholder="Jhon" name="first_name" id="first_name" required>
+                    </label>
+
+                    <label for="email">Email*: 
+                        <input type="email" placeholder="jhonDoe@mail.com" name="email" id="email" required>
+                    </label>
+
+                    <label for="business_desc">Description: 
+                        <textarea name="business_desc" id="business_desc" cols="30" rows="4" placeholder="Describe your business"></textarea>
+                    </label>
+                    <input type="hidden" name="date">
+                </fieldset>
+                <p class="text-center">
+                    <input class="btn" type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+        <aside>
+            <h2>The Temple Inn & Suites</h2>
+            <p>4800 Montgomery Ln #300, Bethesda, MD 20814</p>
+
+            <h2>Schedule</h2>
+            <p><b>Monday - Thursday:</b> 9:00 a.m. to 4:30 p.m. <br> <b>Friday</b>: By Appointment Only</p>
+
+            <h2>Contact Information</h2>
+            <p>
+                <a href="mailto:info@cancunschamber.com" target="_blank">info@cancunschamber.com</a>
+            </p>
+            <p>
+                <a href="tel:+529981210000" target="_blank">+52 998 121 0000</a>
+            </p>
+            <div class="social-media">
+                <a class="fb" href="https://facebook.com" target="_blank">
+                    <img src="./images/svg/facebook-f-brands.svg" alt="facebook icon">
+                </a>
+                <a class="yt" href="https://instagram.com" target="_blank">
+                    <img src="./images/svg/instagram-brands.svg" alt="facebook icon">
+                </a>
+            </div>
+        </aside>
+
     </main>
 
     <footer>

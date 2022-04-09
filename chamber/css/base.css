@@ -150,7 +150,7 @@ header {
     color: black!important;
 }
 
-.menu-items li.selected a {
+.menu-items li.selected > a {
     background-color: var(--accent1-color);
     color: white;
 }

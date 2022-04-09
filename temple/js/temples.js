@@ -25,13 +25,27 @@ displaytemple = (temple) => {
     let tel = document.createElement("p");
     let favorite = document.createElement("a");
 
-    favorite.setAttribute('href', 'javascript:favorite('+ temple.id +')');
-    if(window.localStorage.getItem('favorites') == null)
+    if(localStorage.getItem('favorites') == null){
         favorite.textContent = 'Add to Favorites';
-    else
-        favorite.textContent = 'Delete from Favorites';
+        favorite.setAttribute('href', 'javascript:favorite('+ temple.id +')');
+    }
+    else {
+        const favorites = JSON.parse(localStorage.getItem('favorites'));
+        //console.log(favorites);
+        for (let index = 0; index < favorites.length; index++) {
+            if (favorites[index] == temple.id){
+                favorite.textContent = 'Delete from Favorites';
+                favorite.setAttribute('href', 'javascript:removeFavorite('+ temple.id +')');
+                favorite.setAttribute('class', 'fav');
+                break;
+            }else{
+                favorite.textContent = 'Add to Favorites';
+                favorite.setAttribute('href', 'javascript:favorite('+ temple.id +')');
+                favorite.setAttribute('class', 'no-fav');
+            }
+        }
+    }
     
-    console.log(temple);
     image.setAttribute('src', './images/temples/' + temple.image);
     image.setAttribute('alt', `image of ${temple.name}`);
     image.setAttribute('loading', 'lazy');
@@ -122,33 +136,28 @@ document.getElementById('grid').addEventListener('click', function(){
 });
 */
 function favorite(id) {
-    let favorites = Array();
-    
-    console.log(favorites, window.localStorage.getItem('favorites'));
-
-    if (window.localStorage.getItem('favorites') == null ) {
-        window.localStorage.setItem('favorites', [id] )
-    } else {
-        localFavorites = parseInt(window.localStorage.getItem('favorites'));
-        console.log(localFavorites);
-        window.localStorage.setItem('favorites', parseInt(window.localStorage.getItem('favorites')) + 1);
-    }
-    /*
-    if (window.localStorage.getItem('favorites') == null ) {
-        
-    } else {
-        //console.log('Mas de una vuelta');
-        window.localStorage.setItem('favorites', parseInt(window.localStorage.getItem('favorites')) + 1);
+    let new_value = id;
+    if (localStorage.getItem('favorites') == null ){
+        localStorage.setItem('favorites', '[]');
     }
 
-    //console.log(window.localStorage.getItem('favorites'), window.localStorage.getItem('last_visit'));
+    let currentFav = JSON.parse(localStorage.getItem('favorites'));
+    currentFav.push(new_value)
 
-    days_message = (window.localStorage.getItem('last_visit') == null) ? ', Welcome by First Time!' : 'Last Visited: ' + daysBetween + ' day(s) ago.';
+    localStorage.setItem('favorites', JSON.stringify(currentFav));
+    location.reload();
+}
+function removeFavorite(id) {
+    const favs = JSON.parse(localStorage.getItem('favorites'));
+    const index = favs.indexOf(id);
+    if( index > -1)
+        favs.splice(index, 1)
+    localStorage.setItem('favorites', JSON.stringify(favs));
+    location.reload();
+}
 
-    //visits.textContent = '# Visits: ' + window.localStorage.getItem('favorites') + days_message;
-    visits.textContent = days_message;
-
-    window.localStorage.setItem('last_visit', new_v);
-    //localStorage.clear()*/
-    //localStorage.clear()
+function clearFavorites() {
+    localStorage.clear()
+    console.clear();
+    location.reload();
 }
