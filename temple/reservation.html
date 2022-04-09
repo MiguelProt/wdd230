@@ -40,13 +40,13 @@
             </div>
             <div class="menu">
                 <ul class="menu-items">
-                    <li class="selected">
+                    <li>
                         <a href="./">Home</a>
                     </li>
                     <li>
                         <a href="./temples.html">Temples</a>
                     </li>
-                    <li>
+                    <li class="selected">
                         <a href="./reservation.html">Reservation</a>
                     </li>
                     <li class="sub-menu">
@@ -64,8 +64,58 @@
         </nav>
     </header>
 
-    <main>
-        <!-- page_content -->
+    <main class="padding-top">
+        <form action="./thankyou.html" method="get" class="form">
+            <fieldset>
+                <legend>General Information</legend>
+                <label for="first_name">First Name*: 
+                    <input type="text" placeholder="Jhon" name="first_name" id="first_name" required>
+                </label>
+
+                <label for="last_name">Last Name*: 
+                    <input type="text" placeholder="Doe" name="last_name" id="last_name" required>
+                </label>
+
+                <label for="email">Email*: 
+                    <input type="email" placeholder="jhonDoe@mail.com" name="email" id="email" required>
+                </label>
+
+                <label for="celphone">Cellphone*: 
+                    <input type="tel" placeholder="9981210000" name="celphone" id="celphone" required>
+                </label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Trip Details</legend>
+                <label for="trip_name">Trip Location*: 
+                    <input type="text" name="trip_location" placeholder="Your place" id="trip_location" required>
+                </label>
+
+                <label for="date_of_travel">Trip Date: 
+                    <input type="date" name="date_of_travel" id="date_of_travel" >
+                </label>
+
+                <label for="rooms">Number of rooms: 
+                    <select name="rooms" id="rooms">
+                        <option value="">Select your type of room</option>
+                        <option value="0">Single</option>
+                        <option value="1">Double</option>
+                        <option value="2">Suite</option>
+                        <option value="3">Golde Family Package</option>
+                    </select>
+                </label>
+
+                <label for="trip_desc">Description: 
+                    <textarea name="trip_desc" id="trip_desc" cols="30" rows="4" placeholder="Describe your needs or amenities that you want"></textarea>
+                </label>
+                <input type="text" name="date" class="none">
+            </fieldset>
+            <br>
+            
+            <p class="text-center">
+                <input class="btn" type="submit" value="Reservate">
+            </p>
+        </form>
     </main>
 
     <footer>

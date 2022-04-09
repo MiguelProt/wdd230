@@ -44,5 +44,6 @@ document.querySelector('.mobile-menu').addEventListener('click', (function(){
     const fullDate = new Intl.DateTimeFormat("en-US", {dateStyle: "full"}).format(now);
 
     dataField.textContent = fullDate;
-    dateWeather.textContent = fullDate;
+    if(dateWeather)
+        dateWeather.textContent = fullDate;
  })();

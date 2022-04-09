@@ -92,4 +92,6 @@
         height: auto!important;
     }
     .phrase { padding: 2rem;}
+    .cards { grid-template: auto / repeat(2, minmax(auto, 1fr)); }
+    .padding-top { padding-top: 0!important;}
 }
