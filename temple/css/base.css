@@ -138,9 +138,9 @@ nav.open .menu-items li {
     color: black!important;
 }
 
-.menu-items li.selected a {
-    background-color: var(--accent1-color);
-    color: var(--primary-color);
+.menu-items li.selected > a {
+    background-color: var(--accent1-color)!important;
+    color: var(--primary-color)!important;
 }
 li.sub-menu { flex-direction: column; }
 nav.open .menu-items li {
@@ -150,6 +150,8 @@ nav.open .menu-items li {
 }
 .menu-items li.sub-menu a {
     width: calc(100% - 30px)!important;
+    background-color: transparent;
+    color: var(--secondary-color);
 }
 .mobile-menu {
     display: block;
