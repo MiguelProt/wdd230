@@ -1,0 +1,73 @@
+@media screen and (min-width: 993px) {
+    .top-bar {
+
+    }
+    .date { font-size: 18px!important; }
+    .social-media img {
+        width: 24px;
+        margin: 0 10px;
+        max-height: 24px;
+    }
+    .left, .right { margin: auto 0!important; }
+    nav { 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .mobile-menu { display: none!important; }
+    .menu {
+        position: initial;
+        display: block;
+        width: auto;
+    }
+    .menu-items { 
+        display: flex;
+        flex-direction: row;
+    }
+    .menu a { font-size: 18px; }
+    .menu .sub-menu {
+        position: relative;
+    }
+    .sub-items { display: none; }
+    .menu .sub-menu:hover > .sub-items, .menu .sub-items:hover {
+        display: block;
+        position: absolute;
+        top: 40px;
+        width: auto;
+        background-color: var(--secondary-color);
+        background: var(--secondary-color);
+        border-radius: 5px;
+        padding: 10px;
+    }
+    /* .menu .sub-menu:hover > .sub-items li:hover {
+        background-color: var(--secondary-color);
+    } */
+    .menu .sub-menu:hover > .sub-items a:hover { background-color: none; }
+    .menu .sub-menu:hover > .sub-items a {
+        color: var(--primary-color);
+        display: inline-table;
+        padding: 8px;
+    }
+    .menu .sub-menu:hover > .sub-items li a:hover {
+        background-color: var(--accent1-color)!important;
+    }
+    picture {
+        display: flex;
+        flex-direction: column;
+    }
+    .logo img {
+        height: 50px;
+    }
+    .permalink, ul.permalink ul {
+        padding-inline-start: 0px;
+    }   
+    .weather-cards { grid-template: 1fr / 1fr 3fr; }
+    footer img { max-width: 300px; }
+    footer {
+        grid-template: 1fr / 1fr 1fr 1fr;
+    }
+    footer div:nth-of-type(3) {
+        grid-column: 3;
+        grid-row: 1/3;
+    }
+}

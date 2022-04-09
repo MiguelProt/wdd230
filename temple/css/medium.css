@@ -1,0 +1,95 @@
+@media screen and (min-width: 480px) {
+    .logo img{
+        max-width: 100%;
+        height: 70px;
+        margin: auto 0;
+    }
+    .top-bar {
+        flex-direction: row;
+        min-height: 10px;
+        justify-content: space-between;
+    }
+    .left, .right { margin: 0;}
+    .date { 
+        font-size: 24px!important; 
+        text-align: left;
+        width: 100%;
+    }
+    header {
+        position: initial;
+        margin-bottom: 0;
+    }
+    nav {
+        background: var(--primary-color);
+        padding: 15px;
+        height: 70px!important;
+        position: relative;
+    }
+    .menu {
+        position: absolute;
+        background-color: var(--primary-color);
+        right: -300px;
+        width: 300px;
+    }
+    nav.open .menu {
+        right: 0;
+    }
+    footer {
+        grid-template: 1fr / 1fr 1fr;
+        align-items: center;
+    }
+    footer div:nth-of-type(1) {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    footer div:nth-of-type(2) {
+        grid-column: 2;
+        grid-row: 1/3;
+    }
+    footer div:nth-of-type(3) {
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    footer div:nth-of-type(4){
+        grid-column: 1/4;
+    }
+    .permalink, ul.permalink ul {
+        list-style-type: none;
+        margin-block-start: 0;
+        padding-inline-start: 40px;
+    }
+    .permalink li { text-align: left; }
+    .weather-cards { grid-template: auto auto/ 1fr; }
+    .forecasts { grid-template: 1fr / 1fr 1fr 1fr; }
+    .forecasts > h2 {
+        grid-row: 1;
+        grid-column: 1/4;
+    }
+    #forecast-1 { grid-column: 1; }
+    #forecast-2 { grid-column: 2; }
+    #forecast-3 { grid-column: 3; }
+    .banner > img { height: 340px; }
+    .weather-image {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .weather-image > img {
+        width: 100px;
+        margin: 0 auto;
+    }
+    .weather-image > .full-temp p {
+        margin: 0 0 10px;
+    }
+    .summary-temple {
+        display: flex;
+        flex-direction: row;
+    }
+    .summary-temple > div {
+        width: 50%;
+    }
+    .summary-temple > .temple-image {
+        height: auto!important;
+    }
+    .phrase { padding: 2rem;}
+}

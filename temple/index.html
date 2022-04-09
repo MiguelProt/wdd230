@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Inn & Suites</title>
+    <link rel="shortcut icon" href="./images/logo/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/medium.css">
+    <link rel="stylesheet" href="./css/large.css">
+</head> 
+<body>
+    <header>
+        <div class="top-bar">
+            <div class="left">
+                <p class="date"></p>
+            </div>
+            <div class="right">
+                <div class="social-media">
+                    <a class="fb" href="https://facebook.com" target="_blank">
+                        <img src="./images/svg/facebook-f-brands.svg" alt="facebook icon">
+                    </a>
+                    <a class="yt" href="https://instagram.com" target="_blank">
+                        <img src="./images/svg/instagram-brands.svg" alt="facebook icon">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="logo">
+                <picture>
+                    <!-- <img src="./images/logo/favicon.png" alt=""> -->
+                    <source srcset="./images/logo/mint_logo.png" media="(min-width: 480px) and (max-width: 992px)">
+                        <source srcset="./images/logo/main.png" media="(min-width: 993px)">
+                    <img src="./images/logo/favicon.png" alt="Cancun Chamber" >
+                </picture>
+                <span class="mobile-menu">&#9776;</span>
+            </div>
+            <div class="menu">
+                <ul class="menu-items">
+                    <li class="selected">
+                        <a href="./">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Temples</a>
+                    </li>
+                    <li>
+                        <a href="#">Reservation</a>
+                    </li>
+                    <li class="sub-menu">
+                        <a href="#">Services</a>
+                        <ul class="sub-items">
+                            <li><a href="#">Reception</a></li>
+                            <li><a href="#">Full-time Temple Missionary</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner">
+            <img src="./images/banner.jpg" alt="main banner - room">
+            <div class="banner-content">
+                <h2>Visit our facilities!</h2>
+                <a class="btn btn-secondary" href="#">Book Now</a>
+            </div>
+        </div>
+        <section class="phrase">
+            <h2 class="text-center">The Temple Inn & Suites providing a specialized services</h2>
+        </section>
+        <section class="summary-temple">
+            <div class="temple-image">
+                <img src="./images/temples/honduras.jpeg" alt="Honduras temple">
+            </div>
+            <div class="temple-info">
+                <h2 class="temple-name">Tegucigalpa Honduras Temple</h2>
+                <p class="temple-address">La Iglesia de Jesucristo S.U.D.
+                    Templo de la Ciudad de Tegucigalpa
+                    Residencial Roble Oeste, , Boulevard Roble Oeste, 3ra Calle Sur., Comayagüela, M.D.C., Francisco Morazán, Honduras</p>
+                <p class="temple-aditional-info">
+                    Ordinances for family names must be done in proper sequence—baptism, confirmation, Melchizedek Priesthood ordination (males), initiatory, endowment, and then sealing. Please allow sufficient time to perform all the ordinances you wish to complete during your visit. For additional help and information, please call the temple.
+                </p>
+                <p class="temple-milestones">
+                    <strong>Milestones</strong>
+                    <ul class="milestone-list">
+                        <li>9 June 2006 - Announced</li>
+                        <li>12 September 2009 - Groundbreaking</li>
+                        <li>17 March 2013 - Dedicated</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+        <section class="weather">
+            <div class="weather-cards">
+                <div class="w-card" id="current-day">
+                    <h3 class="dateWeather text-center"></h3>
+                    <div class="weather-image">
+                        <img src="#" alt="weather">
+                        <div class="full-temp">
+                            <p><span class="temp"></span> °F</p>
+                        </div>
+                    </div>
+                    <h5 class="weather-type text-center"></h5>
+                    <p class="text-center weather-desc"></p>
+                    <hr>
+                    <p class="text-center">Humidity: <span class="weather-humidity"></span>%</p>
+                </div>
+                <div class="forecasts">
+                    <h2 class="text-center">Forecast <br> <small>Next three days forecast</small></h2>
+                    <div class="w-card" id="forecast-1">
+                        <div class="weather-image">
+                            <img src="#" alt="weather">
+                            <div class="full-temp">
+                                <p><span class="temp"></span> °F</p>
+                            </div>
+                        </div>
+                        <h5 class="weather-type text-center"></h5>
+                        <p class="text-center weather-desc"></p>
+                        <hr>
+                        <p class="text-center">Humidity: <span class="weather-humidity"></span>%</p>
+                    </div>
+                    <div class="w-card" id="forecast-2">
+                        <div class="weather-image">
+                            <img src="#" alt="weather">
+                            <div class="full-temp">
+                                <p><span class="temp"></span> °F</p>
+                            </div>
+                        </div>
+                        <h5 class="weather-type text-center"></h5>
+                        <p class="text-center weather-desc"></p>
+                        <hr>
+                        <p class="text-center">Humidity: <span class="weather-humidity"></span>%</p>
+                    </div>
+                    <div class="w-card" id="forecast-3">
+                        <div class="weather-image">
+                            <img src="#" alt="weather">
+                            <div class="full-temp">
+                                <p><span class="temp"></span> °F</p>
+                            </div>
+                        </div>
+                        <h5 class="weather-type text-center"></h5>
+                        <p class="text-center weather-desc"></p>
+                        <hr>
+                        <p class="text-center">Humidity: <span class="weather-humidity"></span>%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <img src="./images/logo/main.png" alt="footer logo">
+        </div>
+        <div>
+            <h3 class="text-left">Permalinks</h3>
+            <ul class="permalink">
+                <li>
+                    <a href="./">Home</a>
+                </li>
+                <li>
+                    <a href="#">Temples</a>
+                </li>
+                <li>
+                    <a href="#">Reservation</a>
+                </li>
+                <li >
+                    <a href="#">Services</a>
+                    <ul>
+                        <li class="text-center"><a href="#">Reception</a></li>
+                        <li class="text-center"><a href="#">Full-time Temple Missionary</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <p>Don't wait more...</p>
+            <a class="btn" href="#">Book Now</a>
+        </div>
+        <div>
+            <p class="copy">© <span id="year">2022</span> Temple Inn & Suites .:|:. Miguel Prot .:|:. <br> <small>Last Updated: <span id="fullDate"></span></small></p>
+        </div>
+    </footer>
+
+    <script src="./js/general.js"></script>
+    <script src="./js/windchill.js"></script>
+</body>
+</html>

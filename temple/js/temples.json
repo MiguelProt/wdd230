@@ -1,0 +1,41 @@
+{
+    "temples": [
+        {
+            "id": 1,
+            "name": "Tijuana Mexico Temple",
+            "address": "Paseo Del Rio 6832, Esquina Campestre Oriente, Col 3 RA Etapa Rio Tijuana, 22226 Tijuana, Baja California, Mexico",
+            "image": "tijuana.png",
+            "phone": "(52) 664-969-2690",
+            "services": ["No clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+            "ordinances": "All ordinances are available by appointment only.",
+            "sessions": "All ordinances are available by appointment only.",
+            "closures": ["Monday, 27 June 2022 - Monday, 11 July 2022", "Saturday, 1 October 2022", "Monday, 28 November 2022 - Monday, 12 December 2022", "Saturday, 24 December 2022", "Saturday, 31 December 2022"],
+            "history":  ["2 October 2010: Announced", "18 August 2012: Groundbreaking", "13 December 2015: Dedicated — dedicatory prayer"]
+    
+        },
+        {
+            "id": 2,
+            "name": "Mexico City Mexico Temple",
+            "address":  "Avenida 510 #90, Col. San Juan de Aragon, 07950 México, Distrito Federal, Mexico",
+            "image": "mexico.jpg",
+            "phone": "(52) 55-5003-3700",
+            "services": ["Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+            "ordinances": "All ordinances are available by appointment only.",
+            "sessions": "All ordinances are available by appointment only.",
+            "closures": ["Monday, 27 June 2022 - Monday, 11 July 2022", "Saturday, 1 October 2022", "Saturday, 24 December 2022", "Saturday, 31 December 2022"],
+            "history":  ["3 April 1976: Announced", "25 November 1979: Groundbreaking", "2 December 1983: Dedicated", "16 November 2008: Rededicated", "13 September 2015: Rededicated"]   
+        },
+        {
+            "id": 3,
+            "name": "Mérida Mexico Temple",
+            "address":  "Calle 70 #527, Esq 65 y 67, Col. Centro, 97000 Mérida, Yucatan, Mexico",
+            "image": "merida2.jpg",
+            "phone": "(52) 999-928-1643",
+            "services": ["No Clothing rental available", "No cafeteria available", "No patron housing available", "Distribution center nearby"],
+            "ordinances": "All ordinances are available by appointment only.",
+            "sessions": "All ordinances are available by appointment only.",
+            "closures": ["Monday, 18 July 2022 - Monday, 26 September 2022", "Saturday, 1 October 2022", "Saturday, 24 December 2022", "Saturday, 31 December 2022"],
+            "history":  ["25 September 1998: Announced", "16 January 1999: Groundbreaking", "8 July 2000: Dedicated"]   
+        }
+    ]
+}
